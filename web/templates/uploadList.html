@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>업로드 이미지</title>
+    <meta http-equiv="Refresh" content="8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #dddddd;
+            font-size: 18px; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uploaded Images</h1>
+    <table>
+        <thead>
+            <tr class="text-center">
+                <th width="100px"><h3>RANK</h3></th>
+                <th width="300px"><h3>Image</h3></th>
+                <th width="200px"><h3>Emotion</h3></th>
+                <th width="200px"><h3>Emoji</h3></th>
+                <th width="100px"><h3>Score</h3></th>
+                <th width="150px"><h3>RegDate</h3></th>
+                <th width="150px"><h3>AgentID</h3></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in datas %}
+            <tr class="text-center">
+                <td>{{ obj.ord }}</td>
+                <td><img src="{{ url_for('static', filename=obj.imgfile) }}" width="200"></td>
+                <td>{{ obj.emotion }}</td>
+                <td><img src="{{ url_for('static', filename='/emoji/' + obj.emotion + '.png') }}" width="100"></td>
+                <td>{{ "%.1f" | format(obj.score) }}</td>
+                <td>{{ obj.regdate }}</td>
+                <td>{{ obj.agentid }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
