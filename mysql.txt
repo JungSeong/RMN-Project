@@ -1,0 +1,11 @@
+아래의 SQL문을 실행하여 테이블을 생성해 주세요.
+
+CREATE TABLE tbl_emotion
+(
+ord INT,
+agentid VARCHAR(10),
+emotion VARCHAR(10),
+score FLOAT,
+imgfile VARCHAR(100),
+regdate date
+);
