@@ -10,4 +10,5 @@ Prompt! 동아리 활동으로 진행한 미니 프로젝트입니다.
 라즈베리파이의 카메라 모듈을 사용해 자신의 얼굴을 촬영합니다! (컴퓨터 내장 웹캠으로도 자신의 얼굴을 촬영할 수 있습니다!) 자신의 표정과 7가지의 감정(angry, disgust, fear, happy, neutral, sad, surprise) 중 가장 유사도가 높은 감정이 출력되게 됩니다. 가장 정확도가 높은 1등부터 10등까지 리더보드가 출력되니, 가장 높은 등수를 차지하기 위해 멋진 표정을 취해주세요!
 
 프로젝트 시연 영상 :
+
 [![Video Label](http://img.youtube.com/vi/nD_faZ8J3JI/0.jpg)](https://youtu.be/nD_faZ8J3JI)
