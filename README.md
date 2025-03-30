@@ -15,7 +15,8 @@
 |구분|상세|
 |---|---|
 |개발 환경|<img src='https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white'> <img src='https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white'>|
-|개발 언어|<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">|
+|개발 언어|<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/HTML-FF8900?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-01B9FC?style=for-the-badge&logo=css3&logoColor=white">|
+|웹 프레임워크|<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">|
 |DBMS|<img src="https://img.shields.io/badge/MySQL-00BFFF?style=for-the-badge&logo=mysql&logoColor=white">|
 
 ### 5. 프로젝트 시연 영상
