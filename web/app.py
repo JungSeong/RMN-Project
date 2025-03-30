@@ -69,6 +69,6 @@ def image_view():
 
     return render_template('uploadList.html', datas=listData)
 
-#http://lopcalhost:3000/uploadList에서 화면 확인 가능
+# http://localhost:3000/uploadList에서 디버깅 화면 확인 가능
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000, debug=True) 
