@@ -11,10 +11,10 @@ sudo /user/bin/mysql -u root -p
 ### 데이터베이스 생성, 테이블 생성, 권한 설정하기
 
 ~~~
-CREATE DATABASE {테이블 이름}
+CREATE DATABASE {DATABASE}
 ~~~
 
-로 테이블을 생성합니다.
+로 데이터베이스를 생성합니다.
 
 ~~~
 SHOW DATABASES;
@@ -23,20 +23,24 @@ SHOW DATABASES;
 에서 데이터베이스가 잘 생성되었는지 확인합니다. 이후
 
 ~~~
-CREATE USER '사용자'@'host' identified by '비밀번호';
+USE {데이터베이스}
+~~~
+로 생성한 데이터 베이스를 사용합니다. 이후
+
+~~~
+CREATE USER '사용자'@'localhost' identified by '비밀번호';
 ~~~
 
 를 통해 내부 접근을 허용하는 사용자를 추가한 다음,
 
 ~~~
-CREATE TABLE {테이블명}
+CREATE TABLE tbl_emotion(
 ord INT,
 agentid VARCHAR(10),
 emotion VARCHAR(10),
 score FLOAT,
 imgfile VARCHAR(100),
-regdate date
-);
+regdate date);
 ~~~
 
 같은 형식으로 테이블을 생성해 줍니다. 이후
@@ -46,3 +50,6 @@ GRANT SELECT, INSERT ON {DB 이름}.{테이블명} to '사용자'@'localhost';
 ~~~
 
 와 같은 식으로 해당 사용자에게 권한을 부여해 줍니다.
+
+### DB 내의 데이터 영구적으로 삭제
+TRUNCATE table {table_name};
