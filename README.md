@@ -19,4 +19,3 @@
 |DBMS|<img src="https://img.shields.io/badge/MySQL-00BFFF?style=for-the-badge&logo=mysql&logoColor=white">|
 
 ## 🎥 5. 프로젝트 시연 사진 / 영상
-![May-11-2025 13-48-34](https://github.com/user-attachments/assets/0c2c0fb2-811b-4a3e-8fe7-b998b9a4f742)
