@@ -35,13 +35,12 @@ def predict(agentid):
             max_emotion = emotion  # 최고 확률 감정 업데이트
             max_score = score  # 최고 확률 업데이트
 
-
     # 결과 문자열 생성
     result_str = f"{max_emotion}: {max_score:.2f}%\n" if max_emotion else "감정이 감지되지 않았습니다"
 
     # DB 에 저장
     # 'prompt'라는 이름을 가진 DB에 user='{user}', host=localhost, password='{password}'를 가진 사람이 접속
-    conn = pymysql.connect(host='localhost', port=3306, user='{user}', password='{password}', db='prompt', use_unicode=True, charset='utf8')
+    conn = pymysql.connect(host='localhost', port=3306, user='jungseong', password='qhdks001!', db='prompt', use_unicode=True, charset='utf8')
     cur = conn.cursor()
     cur.execute("INSERT INTO tbl_emotion (agentid, emotion, score, imgfile, regdate) VALUES ('"+agentid+"', '"+max_emotion+"', "+str(max_score)+", '"+image_path+"', sysdate() )")
     conn.commit()
@@ -54,7 +53,7 @@ def predict(agentid):
 
 @app.route('/uploadList', methods=['GET'])
 def image_view():
-    conn = pymysql.connect(host='localhost', port=3306, user='{user}', password='{password}', db='prompt', use_unicode=True, charset='utf8')
+    conn = pymysql.connect(host='localhost', port=3306, user='jungseong', password='qhdks001!', db='prompt', use_unicode=True, charset='utf8')
     cur = conn.cursor()
     SQL = "SELECT RANK() OVER(ORDER BY score DESC) ord, emotion, score, imgfile, regdate, agentid FROM tbl_emotion LIMIT 10"
     cur.execute(SQL)
