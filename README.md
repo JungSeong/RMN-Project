@@ -19,4 +19,4 @@
 |DBMS|<img src="https://img.shields.io/badge/MySQL-00BFFF?style=for-the-badge&logo=mysql&logoColor=white">|
 
 ## 🎥 5. 프로젝트 시연 사진 / 영상
-[!GIF_1](./gif/Linked.gif)
+[!GIF_1](https://github.com/username/repository/raw/main/gif/Linked.gif)
